@@ -168,9 +168,9 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className=" w-full flex flex-col md:flex-row gap-4">
-                        <button onClick={() => (handleNext('retour'))} type="button" className={`  w-full rounded-full bg-primary py-4 hover:text-primary hover:bg-white border-2 border-primary duration-500 font-medium text-white `}> Retour </button>
-                        <button onClick={() => (handleNext('suivante'))} type="button" className={` ${etaps == 3 ? 'hidden' : 'block'} w-full rounded-full bg-primary py-4 hover:text-primary hover:bg-white border-2 border-primary duration-500 font-medium text-white `}> Suivante </button>
-                        <button type="submit" className={`${etaps == 3 ? 'block' : 'hidden'} w-full rounded-full bg-primary py-4 hover:text-primary hover:bg-white border-2 border-primary duration-500 font-medium text-white `}> {isLoading ? "Envoi en cours..." : 'Envoyer'} </button>
+                        <button onClick={() => handleNext('retour')} type="button" className={`${etaps === 1 ? 'hidden' : 'block'} w-full rounded-full bg-primary py-4 hover:text-primary hover:bg-white border-2 border-primary duration-500 font-medium text-white`}>Retour</button>
+                        <button onClick={() => handleNext('suivante')} type="button" className={`${etaps === 3 ? 'hidden' : 'block'} w-full rounded-full bg-primary py-4 hover:text-primary hover:bg-white border-2 border-primary duration-500 font-medium text-white`}>Suivante</button>
+                        <button type="submit" className={`${etaps === 3 ? 'block' : 'hidden'} w-full rounded-full bg-primary py-4 hover:text-primary hover:bg-white border-2 border-primary duration-500 font-medium text-white`}>{isLoading ? "Envoi en cours..." : 'Envoyer'}</button>
                     </div>
 
                 </form>

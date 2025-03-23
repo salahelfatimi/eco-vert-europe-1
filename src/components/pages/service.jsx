@@ -27,7 +27,7 @@ export default function Service() {
         <div className="flex flex-col  items-center  justify-center bg-primary py-20 ">
             <h2 className="mb-4 font-panchang-bold font-medium uppercase text-white text-2xl lg:text-3xl  text-center container"> <span className=" text-tertiary">Nos Services </span> Complets pour Votre Habitat</h2>
             <p className=" pb-10 container font-panchang text-center text-xs lg:text-sm text-white ">Chez Eco Vert Europé, nous mettons à votre disposition un savoir-faire complet pour tous vos projets de rénovation et d’amélioration de l’habitat. De la toiture à l’électricité, en passant par la salle de bain et la façade, nos experts vous accompagnent avec des solutions sur mesure, alliant qualité, durabilité et performance énergétique.</p>
-            <div className="  flex flex-col gap-20 ">
+            <div className="  flex flex-col gap-4 ">
                 {services.map((service, index) => (
                     <div ref={(el) => (serviceRefs.current[index] = el)}  key={index} className=" flex flex-col lg:even:flex-row lg:odd:flex-row-reverse p-6 justify-start gap-6">
                         <div className="lg:w-1/2 lg:h-[30rem] ">
@@ -39,7 +39,7 @@ export default function Service() {
                                 <h3 className="font-panchang  font-semibold text-white text-lg lg:text-2xl uppercase">{service.title}</h3>
                             </div>
                             <p className=" font-panchang text-sm  text-secondary  ">{service.description}</p>
-                            <button className="bg-white p-4 font-panchang-bold rounded-3xl hover:bg-primary border-4 border-white hover:text-white duration-700">Lire More</button>
+                            <button className="bg-white p-4 font-panchang-bold text-primary rounded-3xl hover:bg-primary border-4 border-white hover:text-white duration-700">Lire More</button>
                         </div>
                     </div>
                 ))}

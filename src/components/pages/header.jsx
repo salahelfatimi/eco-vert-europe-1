@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,8 +30,8 @@ export default function Header() {
                         Rénovation & Aménagement clés en main
                     </h1>
                     <div className=" flex flex-col lg:flex-row gap-4 items-center">
-                        <button className="mt-3 bg-primary hover:bg-white hover:text-primary font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-white rounded-full border-primary border-4"> Réserver un rdv en ligne</button>
-                        <button className="mt-3 bg-white hover:bg-tertiary hover:text-white font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-primary rounded-full border-white border-4">  Me faire rappeler</button>
+                        <Link href={'/contact'} className="mt-3 bg-primary hover:bg-white hover:text-primary font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-white rounded-full border-primary border-4"> Réserver un rdv en ligne</Link>
+                        <Link href={'tel:+212602314804'} className="mt-3 bg-white hover:bg-tertiary hover:text-white font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-primary rounded-full border-white border-4">  Me faire rappeler</Link>
                     </div>
                 </div>
             </div>
