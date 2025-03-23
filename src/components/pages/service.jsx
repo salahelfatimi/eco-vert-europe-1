@@ -40,7 +40,7 @@ export default function Service() {
                                 <h3 className="font-panchang-bold  font-semibold text-white text-lg lg:text-2xl uppercase">{service.title}</h3>
                             </div>
                             <p className=" font-panchang text-lg  text-secondary  ">{service.description}</p>
-                            <Link href={service.href} className="bg-white p-4 font-panchang-bold text-primary rounded-3xl hover:bg-primary border-4 border-white hover:text-white duration-700">Lire More</Link>
+                            <Link href={service.href} className="bg-white p-4 text-center font-panchang-bold text-primary rounded-3xl hover:bg-primary border-4 border-white hover:text-white duration-700">Lire More</Link>
                         </div>
                     </div>
                 ))}

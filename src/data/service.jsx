@@ -30,18 +30,18 @@ const allServices = [
     //     img: "/img/service/chauffage.jpg",
     //     href: "/nos_service/chauffage_pompe_a_chaleur"
     // },
-    {
-        title: "Façade & Isolation",
-        description: "Améliorez l’apparence et l’isolation de votre façade pour un logement plus esthétique et éco-performant.",
-        img: "/img/service/peinture.jpg",
-        href: "/nos_service/facade_isolation"
-    },
-    {
-        title: "Création de Salle de Bain Complète",
-        description: "Transformez votre salle de bain en un espace moderne et fonctionnel avec nos solutions clés en main : douche à l’italienne, carrelage, robinetterie, etc.",
-        img: "/img/service/salle-de-bain.jpg",
-        href: "/nos_service/creation_salle_de_bain"
-    },
+    // {
+    //     title: "Façade & Isolation",
+    //     description: "Améliorez l’apparence et l’isolation de votre façade pour un logement plus esthétique et éco-performant.",
+    //     img: "/img/service/peinture.jpg",
+    //     href: "/nos_service/facade_isolation"
+    // },
+    // {
+    //     title: "Création de Salle de Bain Complète",
+    //     description: "Transformez votre salle de bain en un espace moderne et fonctionnel avec nos solutions clés en main : douche à l’italienne, carrelage, robinetterie, etc.",
+    //     img: "/img/service/salle-de-bain.jpg",
+    //     href: "/nos_service/creation_salle_de_bain"
+    // },
     {
         title: "Plaque de Plâtre & Cloisons",
         description: "Optimisez l’agencement de votre intérieur avec la pose de plaques de plâtre pour des murs et cloisons parfaitement finis.",
