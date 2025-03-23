@@ -24,26 +24,29 @@ export default function Service() {
         });
     }, []);
     return (
-        <div className="flex flex-col bg-primary py-20 ">
-            <h2 className="mb-4 font-panchang font-medium uppercase text-secondary text-xl lg:text-3xl  text-center container"> <span className=" text-tertiary">Nos Services </span> Complets pour Votre Habitat</h2>
-            <p className=" pb-10 container font-panchang text-center text-xs text-secondary ">Chez Eco Vert Europé, nous mettons à votre disposition un savoir-faire complet pour tous vos projets de rénovation et d’amélioration de l’habitat. De la toiture à l’électricité, en passant par la salle de bain et la façade, nos experts vous accompagnent avec des solutions sur mesure, alliant qualité, durabilité et performance énergétique.</p>
-            <div className=" container  grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="flex flex-col  items-center  justify-center bg-primary py-20 ">
+            <h2 className="mb-4 font-panchang-bold font-medium uppercase text-secondary text-2xl lg:text-3xl  text-center container"> <span className=" text-tertiary">Nos Services </span> Complets pour Votre Habitat</h2>
+            <p className=" pb-10 container font-panchang text-center text-xs lg:text-sm text-secondary ">Chez Eco Vert Europé, nous mettons à votre disposition un savoir-faire complet pour tous vos projets de rénovation et d’amélioration de l’habitat. De la toiture à l’électricité, en passant par la salle de bain et la façade, nos experts vous accompagnent avec des solutions sur mesure, alliant qualité, durabilité et performance énergétique.</p>
+            <div className="  flex flex-col gap-20 ">
                 {services.map((service, index) => (
-                    <div ref={(el) => (serviceRefs.current[index] = el)}  key={index} className="  bg-tertiary  rounded-3xl  flex flex-col   p-6 justify-start gap-6     ">
-                        <div className="">
-                            <Image width={500} height={500} src={service.img} className="w-full h-[250px] rounded-[30px]  border-4 border-primary object-center object-cover" alt="Eco Vert Europé" title="Eco Vert Europé"/>
+                    <div ref={(el) => (serviceRefs.current[index] = el)}  key={index} className=" flex flex-col lg:even:flex-row lg:odd:flex-row-reverse p-6 justify-start gap-6">
+                        <div className="lg:w-1/2 lg:h-[30rem] ">
+                            <Image width={1920} height={1080} src={service.img} className=" border-white w-full h-full rounded-[30px]  border-4 object-center object-cover" alt="Eco Vert Europé" title="Eco Vert Europé"/>
                         </div>
-                        <div className=" flex flex-col  justify-center gap-6  ">
+                        <div className="lg:w-1/2 flex flex-col  justify-center gap-6  ">
                             <div className=" flex items-center gap-4 ">
-                                <MoveUpRight className="stroke-primary stroke-2 " size={50} />
-                                <h3 className="font-panchang  font-semibold text-primary text- uppercase">{service.title}</h3>
+                                <MoveUpRight className="stroke-white stroke-2 " size={50} />
+                                <h3 className="font-panchang  font-semibold text-white text-lg lg:text-2xl uppercase">{service.title}</h3>
                             </div>
                             <p className=" font-panchang text-sm  text-secondary  ">{service.description}</p>
+                            <button className="bg-white p-4 font-panchang-bold rounded-3xl hover:bg-primary border-4 border-white hover:text-white duration-700">Lire More</button>
                         </div>
                     </div>
                 ))}
             </div>
-            
+            <div className=" pt-10">
+                <button className=" bg-white w-fit p-4 px-10 font-panchang-bold rounded-full hover:bg-primary border-4 border-white hover:text-white duration-700">Lire More Service</button>
+            </div>
         </div>
 
     )

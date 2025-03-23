@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`  flex flex-col justify-between  bg-tertiary`}>
+      <body className={`  flex flex-col justify-between`}>
         <Navbar/>
         <main className=" pt-6">
           {children}

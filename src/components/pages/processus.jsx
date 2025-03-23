@@ -9,7 +9,7 @@ export default function Processus() {
                 <div className="absolute inset-0 bg-black opacity-70"></div> 
             </div>
             <div className="container relative z-10">
-                <h2 className="font-panchang font-medium uppercase text-white text-2xl lg:text-4xl text-center mb-12">
+                <h2 className="font-panchang-bold font-medium uppercase text-white text-2xl lg:text-4xl text-center mb-12">
                     Notre Processus <br /> de <span className="text-primary">Travaux</span>
                 </h2>
                 <div className="max-w-4xl mx-auto space-y-8">

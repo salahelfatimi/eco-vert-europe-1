@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function Reve(){
     return(
-        <div className="bg-tertiary ">
+        <div className="bg-white ">
             <div className="  flex flex-col-reverse lg:flex-row justify-between gap- items-center p-6 gap-10 md:h-fit container  ">
                 <div className="lg:w-1/2">
-                <h2 className=" font-panchang font-medium uppercase text-secondary text-2xl lg:text-4xl">Votre <span className=" text-primary">rêve ,</span><br /> notre <span className=" text-primary">expertise</span></h2>
-                <p className="font-panchang text-sm font-light mt-5 text-secondary">
+                <h2 className=" font-panchang-bold font-medium uppercase text-tertiary text-xl lg:text-4xl">Votre <span className=" text-primary">rêve ,</span><br className=" hidden lg:block" /> notre <span className=" text-primary">expertise</span></h2>
+                <p className="font-panchang text-sm font-light mt-5 text-tertiary">
                     Nous offrons une expérience complète de rénovation et d’aménagement clés en main, couvrant chaque étape du projet, de la conception à la réalisation. <br />
                     Que ce soit pour la toiture, l’isolation, le chauffage, l’électricité, la façade, la plomberie ou encore l’aménagement intérieur, nous créons des espaces harmonieux, fonctionnels et durables.
                 </p>
-                <button className="mt-3 bg-secondary text-sm  font-panchang hover:bg-tertiary hover:text-white duration-700 w-full py-3 px-4  font-medium text-primary rounded-lg border-white border-2"> Me faire rappeler </button>
+                <button className="mt-3 bg-secondary text-sm  font-panchang hover:bg-tertiary hover:text-white duration-700 w-full py-3 px-4  font-medium text-primary rounded-lg border-primary hover:border-tertiary border-2"> Me faire rappeler </button>
                 <button className="mt-3 bg-primary text-sm  font-panchang hover:bg-tertiary hover:text-primary duration-700 w-full py-3 px-4  font-medium text-white rounded-lg border-primary border-2">  Réserver un rdv en ligne </button>
 
                 </div>

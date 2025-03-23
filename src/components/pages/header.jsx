@@ -25,12 +25,12 @@ export default function Header() {
                 <div className="header-overlay absolute top-0 left-0 w-full h-full bg-black  z-10 opacity-60"></div>
                 <Image src="/img/header.jpg" alt="Eco Vert Europé" title="Eco Vert Europé" width={1920} quality={50} height={1080} className="  shadow-2xl header-image object-cover h-screen w-screen object-center" />
                 <div className=" container z-20 flex flex-col w-full  items-center  gap-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-                    <h1 className="font-panchang-bold font-medium text-4xl lg:text-7xl">
+                    <h1 className="font-panchang-bold font-medium text-3xl lg:text-7xl">
                         Rénovation & Aménagement clés en main
                     </h1>
                     <div className=" flex flex-col lg:flex-row gap-4 items-center">
-                        <button className="mt-3 bg-primary hover:bg-white hover:text-primary font-panchang duration-700 w-fit py-2 px-10 font-satoshi font-bold text-white rounded-full border-primary border-4"> Réserver un rdv en ligne</button>
-                        <button className="mt-3 bg-white hover:bg-tertiary hover:text-white font-panchang duration-700 w-fit py-2 px-10 font-satoshi font-bold text-primary rounded-full border-white border-4">  Me faire rappeler</button>
+                        <button className="mt-3 bg-primary hover:bg-white hover:text-primary font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-white rounded-full border-primary border-4"> Réserver un rdv en ligne</button>
+                        <button className="mt-3 bg-white hover:bg-tertiary hover:text-white font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-primary rounded-full border-white border-4">  Me faire rappeler</button>
                     </div>
                 </div>
             </div>

@@ -34,15 +34,15 @@ export default function Faq() {
         }
     ];
     return(
-        <div className="bg-primary">
+        <div className="bg-white">
             <div className="container  flex flex-col justify-between gap-10 items-center py-20  ">
-                <h2  className=" font-panchang font-medium uppercase text-white text-2xl lg:text-4xl "> Foire Aux Questions <span className=" text-white">(FAQ)</span></h2>
+                <h2  className=" font-panchang-bold font-medium uppercase text-tertiary text-2xl lg:text-4xl "> Foire Aux Questions <span className=" text-primary">(FAQ)</span></h2>
                 <div className=" flex flex-col gap-6 w-full">
                     {faqData.map((faq, index) => (
-                        <div key={index} className="flex flex-col p-4 gap-2 border-b-2 border-white">
-                            <h3 onClick={()=>(setOpenFaq(index))} className="font-panchang cursor-pointer lg:text-base text-sm font-medium uppercase text-tertiary"> - {faq.question}</h3>
+                        <div key={index} className="flex flex-col p-4 gap-2 border-b-2 border-primary">
+                            <h3 onClick={()=>(setOpenFaq(index))} className="font-panchang cursor-pointer lg:text-base text-sm font-medium uppercase text-primary"> - {faq.question}</h3>
                             <div className={`overflow-hidden transition-all duration-700 ease-in-out ${openFaq == index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
-                            <p className="font-panchang text-xs lg:text-sm text-white">{faq.answer}</p>
+                            <p className="font-panchang text-xs lg:text-sm text-tertiary">{faq.answer}</p>
                             </div>                    
                         </div>
                     ))}

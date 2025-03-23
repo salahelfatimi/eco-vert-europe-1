@@ -24,35 +24,35 @@ const services = [
         description: "Améliorez votre confort thermique avec nos solutions de chauffage adaptées : installation de radiateurs, pompes à chaleur et systèmes éco-énergétiques.",
         img: "/img/service/chauffage.jpg"
     },
-    {
-        title: "Façade & Isolation",
-        description: "Améliorez l’apparence et l’isolation de votre façade pour un logement plus esthétique et éco-performant.",
-        img: "/img/service/peinture.jpg"
-    },
-    {
-        title: "Création de Salle de Bain Complète",
-        description: "Transformez votre salle de bain en un espace moderne et fonctionnel avec nos solutions clés en main : douche à l’italienne, carrelage, robinetterie, etc.",
-        img: "/img/service/salle-de-bain.jpg"
-    },
-    {
-        title: "Plaque de Plâtre & Cloisons",
-        description: "Optimisez l’agencement de votre intérieur avec la pose de plaques de plâtre pour des murs et cloisons parfaitement finis.",
-        img: "/img/service/plaque-de-platre.jpg"
-    },
-    {
-        title: "Carrelage",
-        description: "Pose de carrelage intérieur et extérieur pour un rendu esthétique, résistant et facile d’entretien.",
-        img: "/img/service/carrelage.jpg"
-    },
-    {
-        title: "Construction & Aménagement",
-        description: "Des solutions adaptées à vos projets d’extension ou de transformation de votre habitat, du gros œuvre aux finitions.",
-        img: "/img/service/construction.jpg"
-    },
-    {
-        title: "Rénovation Complète",
-        description: "Une prise en charge globale de vos travaux pour une maison modernisée, confortable et durable.",
-        img: "/img/service/complete.jpg"
-    }
+    // {
+    //     title: "Façade & Isolation",
+    //     description: "Améliorez l’apparence et l’isolation de votre façade pour un logement plus esthétique et éco-performant.",
+    //     img: "/img/service/peinture.jpg"
+    // },
+    // {
+    //     title: "Création de Salle de Bain Complète",
+    //     description: "Transformez votre salle de bain en un espace moderne et fonctionnel avec nos solutions clés en main : douche à l’italienne, carrelage, robinetterie, etc.",
+    //     img: "/img/service/salle-de-bain.jpg"
+    // },
+    // {
+    //     title: "Plaque de Plâtre & Cloisons",
+    //     description: "Optimisez l’agencement de votre intérieur avec la pose de plaques de plâtre pour des murs et cloisons parfaitement finis.",
+    //     img: "/img/service/plaque-de-platre.jpg"
+    // },
+    // {
+    //     title: "Carrelage",
+    //     description: "Pose de carrelage intérieur et extérieur pour un rendu esthétique, résistant et facile d’entretien.",
+    //     img: "/img/service/carrelage.jpg"
+    // },
+    // {
+    //     title: "Construction & Aménagement",
+    //     description: "Des solutions adaptées à vos projets d’extension ou de transformation de votre habitat, du gros œuvre aux finitions.",
+    //     img: "/img/service/construction.jpg"
+    // },
+    // {
+    //     title: "Rénovation Complète",
+    //     description: "Une prise en charge globale de vos travaux pour une maison modernisée, confortable et durable.",
+    //     img: "/img/service/complete.jpg"
+    // }
 ];
 export default services

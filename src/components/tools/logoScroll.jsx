@@ -22,7 +22,7 @@ export default  function LogoScroll() {
 
   return (
     <div className=" py-20">
-      <h2 className="mb-4  font-panchang font-medium uppercase text-secondary text-xl  text-center"><span className=" text-primary">Nos</span> principaux fournisseurs et partenaires</h2>
+      <h2 className="mb-4  font-panchang-bold uppercase text-tertiary text-2xl lg:text-3xl  text-center"><span className=" text-primary">Nos</span> principaux fournisseurs et partenaires</h2>
       <div className=" w-full  mx-auto mt-10">
         <div className="py-2 overflow-hidden" ref={emblaRef}>
           <div className="flex flex-row flex-nowrap gap-32 pl-32">        
