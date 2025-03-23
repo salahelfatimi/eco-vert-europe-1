@@ -7,13 +7,13 @@ export default function Reve(){
             <div className="  flex flex-col-reverse lg:flex-row justify-between gap- items-center p-6 gap-10 md:h-fit container  ">
                 <div className="lg:w-1/2">
                     <h2 className=" font-panchang-bold font-medium uppercase text-tertiary text-xl lg:text-4xl">Votre <span className=" text-primary">rêve ,</span><br className=" hidden lg:block" /> notre <span className=" text-primary">expertise</span></h2>
-                    <p className="font-panchang text-sm font-light mt-5 text-tertiary">
+                    <p className="font-panchang text-lg font-light mt-5 text-tertiary">
                         Nous offrons une expérience complète de rénovation et d’aménagement clés en main, couvrant chaque étape du projet, de la conception à la réalisation. <br />
                         Que ce soit pour la toiture, l’isolation, le chauffage, l’électricité, la façade, la plomberie ou encore l’aménagement intérieur, nous créons des espaces harmonieux, fonctionnels et durables.
                     </p>
                     <div className=" flex  flex-col gap-2 mt-5">
-                        <Link href={'/contact'} className="mt-3 text-center  text-sm  font-panchang duration-700 w-full py-3 px-4 hover:animate-bounce  font-medium text-primary rounded-lg border-primary border-2"> Me faire rappeler </Link>
-                        <Link href={'tel:+212602314804'} className="mt-3 text-center bg-primary text-sm  font-panchang duration-700 w-full py-3 px-4 hover:animate-bounce  font-medium text-white rounded-lg border-primary border-2">  Réserver un rdv en ligne </Link>
+                        <Link href={'tel:+212602314804'} className="mt-3 text-center  text-sm  font-panchang duration-700 w-full py-3 px-4   font-medium text-primary rounded-lg border-primary border-2"> Me faire rappeler </Link>
+                        <Link href={'/contact'} className="mt-3 text-center bg-primary text-sm  font-panchang duration-700 w-full py-3 px-4   font-medium text-white rounded-lg border-primary border-2">  Réserver un rdv en ligne </Link>
                     </div>
                    
                 </div>

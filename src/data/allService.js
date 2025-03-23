@@ -12,24 +12,24 @@ const allServices = [
         img: "/img/service/toiture.jpg",
         href: "/nos_service/toiture_etancheite"
     },
-    // {
-    //     title: "Électricité",
-    //     description: "Modernisez votre installation électrique en toute sécurité. Nous assurons la mise aux normes, le câblage et l’installation d’équipements performants.",
-    //     img: "/img/service/electrique.jpg",
-    //     href: "/nos_service/electricite"
-    // },
-    // {
-    //     title: "Plomberie",
-    //     description: "Des installations sanitaires fiables et durables : rénovation complète, remplacement de canalisations, installation de chauffe-eau et bien plus encore.",
-    //     img: "/img/service/plomberie.jpg",
-    //     href: "/nos_service/plomberie"
-    // },
-    // {
-    //     title: "Chauffage & Pompe à Chaleur",
-    //     description: "Améliorez votre confort thermique avec nos solutions de chauffage adaptées : installation de radiateurs, pompes à chaleur et systèmes éco-énergétiques.",
-    //     img: "/img/service/chauffage.jpg",
-    //     href: "/nos_service/chauffage_pompe_a_chaleur"
-    // },
+    {
+        title: "Électricité",
+        description: "Modernisez votre installation électrique en toute sécurité. Nous assurons la mise aux normes, le câblage et l’installation d’équipements performants.",
+        img: "/img/service/electrique.jpg",
+        href: "/nos_service/electricite"
+    },
+    {
+        title: "Plomberie",
+        description: "Des installations sanitaires fiables et durables : rénovation complète, remplacement de canalisations, installation de chauffe-eau et bien plus encore.",
+        img: "/img/service/plomberie.jpg",
+        href: "/nos_service/plomberie"
+    },
+    {
+        title: "Chauffage & Pompe à Chaleur",
+        description: "Améliorez votre confort thermique avec nos solutions de chauffage adaptées : installation de radiateurs, pompes à chaleur et systèmes éco-énergétiques.",
+        img: "/img/service/chauffage.jpg",
+        href: "/nos_service/chauffage_pompe_a_chaleur"
+    },
     {
         title: "Façade & Isolation",
         description: "Améliorez l’apparence et l’isolation de votre façade pour un logement plus esthétique et éco-performant.",

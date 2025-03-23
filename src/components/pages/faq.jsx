@@ -40,7 +40,7 @@ export default function Faq() {
                 <div className=" flex flex-col gap-6 w-full">
                     {faqData.map((faq, index) => (
                         <div key={index} className="flex flex-col p-4 gap-2 border-b-2 border-primary">
-                            <h3 onClick={()=>(setOpenFaq(index))} className="font-panchang cursor-pointer lg:text-base text-sm font-medium uppercase text-primary"> - {faq.question}</h3>
+                            <h3 onClick={()=>(setOpenFaq(index))} className="font-panchang-bold cursor-pointer lg:text-base text-sm font-medium uppercase text-primary"> - {faq.question}</h3>
                             <div className={`overflow-hidden transition-all duration-700 ease-in-out ${openFaq == index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
                             <p className="font-panchang text-xs lg:text-sm text-tertiary">{faq.answer}</p>
                             </div>                    

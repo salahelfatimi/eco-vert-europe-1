@@ -23,11 +23,11 @@ export default  function LogoScroll() {
   return (
     <div className=" py-20">
       <h2 className="mb-4  font-panchang-bold uppercase text-tertiary text-2xl lg:text-3xl  text-center"><span className=" text-primary">Nos</span> principaux fournisseurs et partenaires</h2>
-      <div className=" w-full  mx-auto mt-10">
+      <div className=" w-full  mx-auto mt-10 cursor-grab active:cursor-grabbing">
         <div className="py-2 overflow-hidden" ref={emblaRef}>
-          <div className="flex flex-row flex-nowrap gap-32 pl-32">        
+          <div className="flex flex-row flex-nowrap gap-32 pl-32 ">        
             {images.map((src, index) => ( 
-              <img title={src.title} width={600} height={300} src={`/img/logoScroll/${src.image}`} className=" select-none cursor-grab active:cursor-grabbing max-w-none h-36 w-auto" alt={src.title} key={index} />
+              <img title={src.title} width={600} height={300} src={`/img/logoScroll/${src.image}`} className=" select-none  max-w-none h-36 w-auto" alt={src.title} key={index} />
             ))}
           </div>
         </div>

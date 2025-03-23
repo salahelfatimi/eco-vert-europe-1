@@ -2,6 +2,7 @@ import services from "@/data/service";
 import gsap from "gsap";
 import { MoveUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 export default function Service() {
@@ -36,16 +37,16 @@ export default function Service() {
                         <div className="lg:w-1/2 flex flex-col  justify-center gap-6  ">
                             <div className=" flex items-center gap-4 ">
                                 <MoveUpRight className="stroke-white stroke-2 " size={50} />
-                                <h3 className="font-panchang  font-semibold text-white text-lg lg:text-2xl uppercase">{service.title}</h3>
+                                <h3 className="font-panchang-bold  font-semibold text-white text-lg lg:text-2xl uppercase">{service.title}</h3>
                             </div>
-                            <p className=" font-panchang text-sm  text-secondary  ">{service.description}</p>
-                            <button className="bg-white p-4 font-panchang-bold text-primary rounded-3xl hover:bg-primary border-4 border-white hover:text-white duration-700">Lire More</button>
+                            <p className=" font-panchang text-lg  text-secondary  ">{service.description}</p>
+                            <Link href={service.href} className="bg-white p-4 font-panchang-bold text-primary rounded-3xl hover:bg-primary border-4 border-white hover:text-white duration-700">Lire More</Link>
                         </div>
                     </div>
                 ))}
             </div>
             <div className=" pt-10">
-                <button className=" bg-white w-fit p-4 px-10 font-panchang-bold rounded-full hover:bg-primary border-4 border-white hover:text-white duration-700">Lire More Service</button>
+                <Link href={'/nos_service'} className=" bg-white w-fit p-4 px-10 font-panchang-bold rounded-full hover:bg-primary border-4 border-white hover:text-white duration-700">Lire More Service</Link>
             </div>
         </div>
 

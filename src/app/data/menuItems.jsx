@@ -2,7 +2,7 @@ const menuItems = [
     { title: 'Accueil', href: '/' },
     {
         title: 'Nos services',
-        href: '#',
+        href: '/nos_service',
         dropdown: [
             { title: 'Toiture & Étanchéité', href: '/nos_service/toiture_etancheite' },
             { title: 'Plomberie', href: '/nos_service/plomberie' },
