@@ -32,7 +32,7 @@ export function generateMetadata() {
 
 export default function FacadeIsolationService() {
   return (
-    <div className="bg-tertiary py-10">
+    <div className="bg-white ">
       <div className="">
         {/* Hero Section */}
         <div className="relative h-screen min-w-full w-full">

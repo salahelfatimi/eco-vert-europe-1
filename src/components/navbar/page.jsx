@@ -1,105 +1,95 @@
 'use client';
-import { File, MapPin, Menu, Phone, X, ChevronDown } from "lucide-react";
-import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
+import { Menu, X } from "lucide-react";
+import menuItems from "@/app/data/menuItems";
 import Link from "next/link";
-import { useState } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
-    const [open, setOpen] = useState(false);
-    const [dropdownOpen, setDropdownOpen] = useState(false);
-    const itemNav=[
-        {title:'Accueil',href:'/'},
-        {
-            title: 'Nos services',
-            href: '#',
-            dropdown: [
-                { title: 'Toiture & Étanchéité', href: '/nos_service/toiture_etancheite' },
-                { title: 'Plomberie', href: '/nos_service/plomberie' },
-                { title: 'Chauffage & Pompe à Chaleur', href: '/nos_service/chauffage_pompe_a_chaleur' },
-                { title: 'Électricité', href: '/nos_service/electricite' },
-                { title: 'Façade & Isolation', href: '/nos_service/facade_isolation' },
-                { title: 'Création de Salle de Bain Complète', href: '/nos_service/creation_salle_de_bain' },
-                { title: 'Plaque de Plâtre & Cloisons', href: '/nos_service/plaque_de_platre_cloisons' },
-                { title: 'Carrelage', href: '/nos_service/carrelage' },
-                { title: 'Construction & Aménagement', href: '/nos_service/construction_amenagement' },
-                { title: 'Rénovation Complète', href: '/nos_service/renovation_complete' },
-                { title: 'Amélioration Énergétique', href: '/nos_service/amelioration_energetique' },
-            ],
-        },
-        // {title:'Réalisations',href:'/Réalisations'},
-        {title:'Articles',href:'/articles'},
-        {title:'Contact',href:'/contact'},
-    ]
+    const navbarRef = useRef(null);
+    const menuPanelRef = useRef(null);
+    const closeButtonRef = useRef(null);
+    const [openNav, setOpenNav] = useState(false);
+
+    useEffect(() => {
+        const navbar = navbarRef.current;
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                gsap.to(navbar, { backgroundColor: "white", duration: 0.5, });
+            } else {
+                gsap.to(navbar, { backgroundColor: "transparent", duration: 0.5, });
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    useEffect(() => {
+        const menuPanel = menuPanelRef.current;
+        const closeButton = closeButtonRef.current;
+        if (openNav) {
+            document.body.classList.add("overflow-hidden");
+            gsap.fromTo(
+                menuPanel,
+                { height: 0 },
+                { height: "100vh", duration: 0.5, ease: "power2.inOut" }
+            );
+            gsap.fromTo(
+                closeButton,
+                { opacity: 0, scale: 0 },
+                { opacity: 1, scale: 1, duration: 0.3, delay: 0.3, ease: "power2.out" }
+            );
+        } else {
+            document.body.classList.remove("overflow-hidden");
+            gsap.to(menuPanel, { height: 0, duration: 1, ease: "power2.inOut" });
+            gsap.to(closeButton, { opacity: 0, scale: 0, duration: 1, ease: "power2.in" });
+        }
+    }, [openNav]);
 
     return (
-       
-            <div className="fixed z-50 right-0 left-0">
-                <div className="bg-white py-6 ">
-                    <div className="px-20 flex justify-between items-center">
-                        <Link href="/" className="flex gap-4 items-center justify-center">
-                            {/* <Image
-                                src="/logo.svg"
-                                width={70}
-                                height={70}
-                                priority
-                                alt="Services Reparation"
-                            /> */}
-                            <h2>Eco vert europé</h2>
-                        </Link>
-                        <div className="xl:block hidden">
-                            <ul className="flex gap-10 items-center">
-                                {itemNav.map((ele, index) => (
-                                    <li key={index} className="relative group">
-                                        <div className="flex items-center gap-1 cursor-pointer font-medium text-sm font-panchang text-tertiary hover:text-primary">
-                                            <Link href={ele.href} className="flex items-center"> {ele.title} {ele.dropdown && <ChevronDown size={16} />} </Link>
-                                        </div>
-                                        {ele.dropdown && (
-                                            <ul className="absolute left-0 top-full bg-white shadow-lg mt-2  border border-primary w-48 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
-                                                {ele.dropdown.map((item, idx) => (
-                                                   <li key={idx} className="hover:bg-primary hover:text-white text-xs font-panchang" > <Link href={item.href} className="block px-4 py-2 text-tertiary hover:text-white" > {item.title} </Link> </li>
-                                                ))}
-                                            </ul>
-                                        )}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="xl:hidden block">
-                            <Menu size={40} className="cursor-pointer" onClick={() => setOpen(!open)} />
-                            {open && (
-                                <div className="fixed z-50 inset-0 bg-white p-4">
-                                    <X size={40} className="text-red-600 cursor-pointer" onClick={() => setOpen(false)} />
-                                    <ul className="mt-8 space-y-4">
-                                        {itemNav.map((ele, index) => (
-                                            <li key={index} className="text-lg">
-                                                {ele.dropdown ? (
-                                                    <div className="flex flex-col">
-                                                       <button className="flex justify-between items-center w-full text-left font-medium text-black hover:text-[#0276FF]" onClick={() => setDropdownOpen((prev) => prev === index ? null : index ) } >
-                                                            {ele.title}
-                                                            <ChevronDown size={20} className={`transition-transform duration-300 ${ dropdownOpen === index ? "rotate-180" : "" }`} />
-                                                        </button>
-                                                        {dropdownOpen === index && (
-                                                            <ul className="ml-4 mt-2 space-y-2">
-                                                                {ele.dropdown.map((item, idx) => (
-                                                                    <li key={idx}>
-                                                                       <Link href={item.href} className="block text-black hover:text-[#0276FF]" onClick={() => setOpen(false)} > {item.title} </Link>
-                                                                    </li>
-                                                                ))}
-                                                            </ul>
-                                                        )}
-                                                    </div>
-                                                ) : (
-                                                    <Link href={ele.href} className="block text-black hover:text-[#0276FF]" onClick={() => setOpen(false)} > {ele.title} </Link>
-                                                )}
+        <div>
+            {/* Navbar */}
+            <div ref={navbarRef} className="flex px-2 lg:px-20 flex-row items-center justify-between min-h-20 fixed top-0 right-0 left-0 z-30">
+                <h2 >Eco vert europé</h2>
+
+                <button onClick={() => setOpenNav(!openNav)}>
+                    <Menu className="stroke-primary" size={50} />
+                </button>
+            </div>
+
+            {/* Menu Panel */}
+            <div ref={menuPanelRef} className="fixed inset-0 bg-white h-0 overflow-hidden z-30">
+                <div className="flex flex-col items-center justify-center h-full">
+                    <div ref={closeButtonRef} className="absolute top-4 right-4" style={{ opacity: 0, scale: 0 }}>
+                        <button onClick={() => setOpenNav(false)} className="p-2 rounded-full transition-colors border-2 border-primary">
+                            <X className="stroke-primary" size={30} />
+                        </button>
+                    </div>
+                    <div className="flex flex-col items-center gap-6">
+                        {menuItems.map((item, index) => (
+                            <div key={index} className="text-center">
+                                <Link href={item.href} onClick={() => setOpenNav(false)} className="font-semibold font-panchang-bold text-xl lg:text-2xl text-primary">
+                                    {item.title}
+                                </Link>
+                                {item.dropdown && (
+                                    <ul className="mt-2">
+                                        {item.dropdown.map((subItem, subIndex) => (
+                                            <li key={subIndex} className="text-sm">
+                                                <Link href={subItem.href} onClick={() => setOpenNav(false)} className="text-primary font-panchang">
+                                                    {subItem.title}
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>
-                                </div>
-                            )}
-                        </div>
+                                )}
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
-       
+        </div>
     );
 }

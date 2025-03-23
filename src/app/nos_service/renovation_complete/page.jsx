@@ -32,7 +32,7 @@ export function generateMetadata() {
 
 export default function RenovationCompleteService() {
   return (
-    <div className="bg-tertiary py-10">
+    <div className="bg-white ">
       <div className="">
         <div className="relative h-screen min-w-full w-full">
           <div className="bg-black opacity-60 inset-0 absolute"></div>

@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`  flex flex-col justify-between`}>
         <Navbar/>
-        <main className=" pt-6">
+        <main className=" ">
           {children}
         </main>
         <Footer/>
