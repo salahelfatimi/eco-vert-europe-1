@@ -34,7 +34,7 @@ export default function Navbar() {
     return (
        
             <div className="fixed z-50 right-0 left-0">
-                <div className="bg-tertiary py-6 ">
+                <div className="bg-white py-6 ">
                     <div className="px-20 flex justify-between items-center">
                         <Link href="/" className="flex gap-4 items-center justify-center">
                             {/* <Image
@@ -50,13 +50,13 @@ export default function Navbar() {
                             <ul className="flex gap-10 items-center">
                                 {itemNav.map((ele, index) => (
                                     <li key={index} className="relative group">
-                                        <div className="flex items-center gap-1 cursor-pointer font-medium text-sm font-panchang text-secondary hover:text-primary">
+                                        <div className="flex items-center gap-1 cursor-pointer font-medium text-sm font-panchang text-tertiary hover:text-primary">
                                             <Link href={ele.href} className="flex items-center"> {ele.title} {ele.dropdown && <ChevronDown size={16} />} </Link>
                                         </div>
                                         {ele.dropdown && (
-                                            <ul className="absolute left-0 top-full bg-tertiary shadow-lg mt-2  border border-primary w-48 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
+                                            <ul className="absolute left-0 top-full bg-white shadow-lg mt-2  border border-primary w-48 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
                                                 {ele.dropdown.map((item, idx) => (
-                                                   <li key={idx} className="hover:bg-primary hover:text-white text-xs font-panchang" > <Link href={item.href} className="block px-4 py-2 text-secondary hover:text-white" > {item.title} </Link> </li>
+                                                   <li key={idx} className="hover:bg-primary hover:text-white text-xs font-panchang" > <Link href={item.href} className="block px-4 py-2 text-tertiary hover:text-white" > {item.title} </Link> </li>
                                                 ))}
                                             </ul>
                                         )}
