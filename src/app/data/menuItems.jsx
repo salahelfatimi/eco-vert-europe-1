@@ -18,7 +18,7 @@ const menuItems = [
         ],
     },
     { title: 'A propos', href: '/a_propos' },
-    { title: 'Articles', href: '/articles' },
+    // { title: 'Articles', href: '/articles' },
     { title: 'Contact', href: '/contact' },
 ];
 
