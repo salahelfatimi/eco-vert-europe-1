@@ -1,6 +1,5 @@
-'use clientt'
+'use client'
 import { useState } from "react";
-
 export default function Faq() {
     const [openFaq, setOpenFaq] = useState(0);
     const faqData = [

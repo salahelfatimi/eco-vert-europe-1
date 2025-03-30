@@ -1,3 +1,4 @@
+"use client"
 import services from "@/data/service";
 import gsap from "gsap";
 import { MoveUpRight } from "lucide-react";

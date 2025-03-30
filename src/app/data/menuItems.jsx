@@ -17,6 +17,7 @@ const menuItems = [
             { title: 'Amélioration Énergétique', href: '/nos_service/amelioration_energetique' },
         ],
     },
+    { title: 'A propos', href: '/a_propos' },
     { title: 'Articles', href: '/articles' },
     { title: 'Contact', href: '/contact' },
 ];

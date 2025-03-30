@@ -1,6 +1,7 @@
 // pages/electricite.js
 
 import Image from "next/image";
+import Link from "next/link";
 
 export  function generateMetadata() {
     return {
@@ -101,6 +102,10 @@ export default function ElectriciteService() {
             <p className="text-secondary mb-6 font-panchang">
               Nous intervenons dans toute la région pour répondre à vos besoins électriques avec rapidité et efficacité.
             </p>
+            <div className=" flex flex-col lg:flex-row gap-4 items-center justify-center">
+                <Link href={'/contact'} className="mt-3 bg-primary  font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-white rounded-full border-primary border-4"> Réserver un rdv en ligne</Link>
+                <Link href={'tel:+212602314804'} className="mt-3 bg-white  font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-primary rounded-full border-primary border-4">  Me faire rappeler</Link>
+            </div>
           </div>
         </div>
       </div>
