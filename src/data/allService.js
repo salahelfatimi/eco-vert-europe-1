@@ -7,10 +7,16 @@ const allServices = [
 
     },
     {
-        title: "Toiture & Étanchéité",
-        description: "Protégez votre maison avec une toiture résistante et parfaitement étanche. Nous réalisons la rénovation, l’isolation et l’étanchéité de votre toit pour un confort optimal.",
+        title: "Travaux de Toiture",
+        description: "Confiez-nous la rénovation, la réparation ou la pose de votre toiture pour assurer solidité et durabilité à votre habitation.",
         img: "/img/service/toiture.jpg",
-        href: "/nos_service/toiture_etancheite"
+        href: "/nos_service/toiture"
+    },
+    {
+        title: "Étanchéité de Toit",
+        description: "Assurez une protection optimale contre les infiltrations grâce à nos solutions d’étanchéité professionnelles pour toitures plates ou inclinées.",
+        img: "/img/service/etancheite.jpg",
+        href: "/nos_service/etancheite"
     },
     {
         title: "Électricité",

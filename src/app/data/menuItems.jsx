@@ -4,7 +4,8 @@ const menuItems = [
         title: 'Nos services',
         href: '/nos_service',
         dropdown: [
-            { title: 'Toiture & Étanchéité', href: '/nos_service/toiture_etancheite' },
+            { title: 'Étanchéité', href: '/nos_service/etancheite' },
+            { title: 'Toiture & Étanchéité', href: '/nos_service/toiture' },
             { title: 'Plomberie', href: '/nos_service/plomberie' },
             { title: 'Chauffage & Pompe à Chaleur', href: '/nos_service/chauffage_pompe_a_chaleur' },
             { title: 'Électricité', href: '/nos_service/electricite' },

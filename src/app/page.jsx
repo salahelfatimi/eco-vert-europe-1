@@ -5,6 +5,7 @@ import Processus from "@/components/pages/processus";
 import Reve from "@/components/pages/reve";
 import Service from "@/components/pages/service";
 import LogoScroll from "@/components/tools/logoScroll";
+import SactionNumbers from "@/components/tools/sactionNumbers";
 
 export function generateMetadata() {
   return {
@@ -40,6 +41,8 @@ export default function Home() {
     <div className="flex flex-col ">
         <Header/>
         <LogoScroll />
+        <SactionNumbers/>
+
         <Reve/>
         <Service/>
         <Processus/>

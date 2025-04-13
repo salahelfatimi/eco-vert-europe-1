@@ -1,3 +1,4 @@
+import SactionNumbers from "@/components/tools/sactionNumbers";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,6 +12,7 @@ export default function Page() {
                     <h1 className=" text-2xl lg:text-4xl  font-panchang-bold text-center">À Propos – Eco Vert Europé</h1>
                 </div>
             </div>
+            <SactionNumbers/>
             <div className="flex flex-col items-center justify-center py-10 container space-y-4 text-center">
                 <h2 className=" font-panchang-bold text-2xl lg:text-4xl text-primary">Experts en Rénovation et Construction</h2>
                 <p className=" font-panchang lg:text-sm text-xs">Chez Eco Vert Europé, nous transformons vos espaces avec des solutions de rénovation et construction clés en main. Avec une expertise reconnue et un savoir-faire éprouvé, nous réalisons des projets sur mesure alliant design, qualité et durabilité.</p>
