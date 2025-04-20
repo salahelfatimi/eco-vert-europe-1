@@ -1,3 +1,0 @@
-User-Agent: *
-Allow: *
-Sitemap: https://www.eco-vert-europe.com/sitemap.xml
