@@ -1,75 +1,75 @@
 export default function sitemap() {
   return [
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
+      url: `https://www.eco-vert-europe.com`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/contact`,
+      url: `https://www.eco-vert-europe.com/contact`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/a_propos`,
+      url: `https://www.eco-vert-europe.com/a_propos`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/reserver_un_devis`,
+      url: `https://www.eco-vert-europe.com/reserver_un_devis`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service`,
+      url: `https://www.eco-vert-europe.com/nos_service`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/amelioration_energetique`,
+      url: `https://www.eco-vert-europe.com/nos_service/amelioration_energetique`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/carrelage`,
+      url: `https://www.eco-vert-europe.com/nos_service/carrelage`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/chauffage_pompe_a_chaleur`,
+      url: `https://www.eco-vert-europe.com/nos_service/chauffage_pompe_a_chaleur`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/construction_amenagement`,
+      url: `https://www.eco-vert-europe.com/nos_service/construction_amenagement`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/creation_salle_de_bain`,
+      url: `https://www.eco-vert-europe.com/nos_service/creation_salle_de_bain`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/electricite`,
+      url: `https://www.eco-vert-europe.com/nos_service/electricite`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/etancheite`,
+      url: `https://www.eco-vert-europe.com/nos_service/etancheite`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/facade_isolation`,
+      url: `https://www.eco-vert-europe.com/nos_service/facade_isolation`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/plaque_de_platre_cloisons`,
+      url: `https://www.eco-vert-europe.com/nos_service/plaque_de_platre_cloisons`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/plomberie`,
+      url: `https://www.eco-vert-europe.com/nos_service/plomberie`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/renovation_complete`,
+      url: `https://www.eco-vert-europe.com/nos_service/renovation_complete`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/revetements_de_sols_en_resine`,
+      url: `https://www.eco-vert-europe.com/nos_service/revetements_de_sols_en_resine`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/toiture`,
+      url: `https://www.eco-vert-europe.com/nos_service/toiture`,
       lastModified: new Date(),
     },
   ];
