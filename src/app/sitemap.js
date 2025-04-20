@@ -1,4 +1,4 @@
-export default async function sitemap() {
+export default function sitemap() {
   return [
     {
       url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
