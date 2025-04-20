@@ -22,7 +22,7 @@ export default function Footer(){
                     <p className=" text-white font-panchang-bold text-lg font-bold  ">Information :</p>
                     <p className=" text-white font-panchang  "><span>Location : </span>France</p>
                     <p className=" text-white font-panchang  "><span>Telephone : </span>+33771710513</p>
-                    <p className=" text-white font-panchang  "><span>E-mail : </span>info@eco_vert_europe.com</p>
+                    <p className=" text-white font-panchang  "><span>E-mail : </span>eco.vert.europe@gmail.com</p>
                 </div>
             </div>
             <div className=" bg-black py-6 ">

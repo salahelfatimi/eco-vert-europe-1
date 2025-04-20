@@ -10,9 +10,9 @@ export async function POST(request) {
 
     const { fullName, phone, email, adresse ,purpose,details,budget,delai,localisation,comment,remarques} = body;
     const data = await resend.emails.send({
-      from: `${fullName}<brett@ecotechdepannage.com>`,
-      to: "ecotech.depannage@gmail.com",
-      subject: "Un client a soumis une demande via la page de contact.",
+      from: `${fullName}<brett@eco-vert-europe.com>`,
+      to: "eco.vert.europe@gmail.com",
+      subject: "Un client a soumis une reserver un devis",
       react: EmailTemplate({
         fullName: fullName,
         comment: comment,
