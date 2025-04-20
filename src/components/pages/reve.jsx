@@ -12,8 +12,8 @@ export default function Reve(){
                         Que ce soit pour la toiture, l’isolation, le chauffage, l’électricité, la façade, la plomberie ou encore l’aménagement intérieur, nous créons des espaces harmonieux, fonctionnels et durables.
                     </p>
                     <div className=" flex  flex-col gap-2 mt-5">
-                        <Link href={'tel:+212602314804'} className="mt-3 text-center  text-sm  font-panchang duration-700 w-full py-3 px-4   font-medium text-primary rounded-lg border-primary border-2"> Me faire rappeler </Link>
-                        <Link href={'/contact'} className="mt-3 text-center bg-primary text-sm  font-panchang duration-700 w-full py-3 px-4   font-medium text-white rounded-lg border-primary border-2">  Réserver un rdv en ligne </Link>
+                        <Link href={'tel:+33771710513'} className="mt-3 text-center  text-sm  font-panchang duration-700 w-full py-3 px-4   font-medium text-primary rounded-lg border-primary border-2"> Me faire rappeler </Link>
+                        <Link href={'/reserver_un_devis'} className="mt-3 text-center bg-primary text-sm  font-panchang duration-700 w-full py-3 px-4   font-medium text-white rounded-lg border-primary border-2"> Réserver une consultation </Link>
                     </div>
                    
                 </div>

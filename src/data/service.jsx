@@ -24,6 +24,12 @@ const allServices = [
         img: "/img/service/peinture.jpg",
         href: "/nos_service/facade_isolation"
     },
+    {
+        title: "Revêtements de sols en résine",
+        description: "Les revêtements de sols en résine représentent une solution moderne, durable et esthétique, adaptée aussi bien aux environnements industriels qu’aux espaces commerciaux et résidentiels.",
+        img: "/img/service/revetements-de-sols-en-resine.jpg",
+        href: "/nos_service/revetements_de_sols_en_resine"
+    },
     // {
     //     title: "Électricité",
     //     description: "Modernisez votre installation électrique en toute sécurité. Nous assurons la mise aux normes, le câblage et l’installation d’équipements performants.",

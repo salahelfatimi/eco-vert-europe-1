@@ -1,5 +1,4 @@
-
-import { EmailTemplate } from "@/components/emailTemplateResend/email-template";
+import { EmailTemplate } from "@/components/emailTemplateResend/email-template-contact";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -7,26 +6,15 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request) {
   try {
     const body = await request.json();
-
-    const { fullName, phone, email, adresse ,purpose,details,budget,delai,localisation,comment,remarques} = body;
+    const { fullName, purpose, phone ,msg } = body;
     const data = await resend.emails.send({
-      from: `${fullName}<brett@caravanserai-marrakech.com>`,
-      to: "salahfatimi16@gmail.com",
-      subject: "Un client a soumis une demande via la page de contact.",
+      from: `${fullName}<brett@ecotechdepannage.com>`,
+      to: "ecotech.depannage@gmail.com",
+      subject: `Objet du contact :${purpose} `,
       react: EmailTemplate({
-        fullName: fullName,
-        comment: comment,
-        email: email,
-        phone: phone,
-        adresse:adresse,
-        purpose:purpose,
-        details:details,
-        budget:budget,
-        delai:delai,
-        localisation:localisation,
-        remarques:remarques
-
-       
+        FullName: fullName,
+        Phone: phone,
+        Msg:msg
       }),
     });
 

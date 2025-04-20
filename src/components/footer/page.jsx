@@ -21,7 +21,7 @@ export default function Footer(){
                 <div className="flex flex-col items-center lg:items-start gap-1">
                     <p className=" text-white font-panchang-bold text-lg font-bold  ">Information :</p>
                     <p className=" text-white font-panchang  "><span>Location : </span>France</p>
-                    <p className=" text-white font-panchang  "><span>Telephone : </span>0602314804</p>
+                    <p className=" text-white font-panchang  "><span>Telephone : </span>+33771710513</p>
                     <p className=" text-white font-panchang  "><span>E-mail : </span>info@eco_vert_europe.com</p>
                 </div>
             </div>

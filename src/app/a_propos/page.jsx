@@ -2,6 +2,37 @@ import SactionNumbers from "@/components/tools/sactionNumbers";
 import Image from "next/image";
 import Link from "next/link";
 
+export function generateMetadata() {
+    return {
+      title: "À propos de Eco Vert Europé - Rénovation & Énergie Durable",
+      description: "Découvrez Eco Vert Europé, votre partenaire de confiance en rénovation, énergie verte et construction durable. Expertise locale et qualité garantie.",
+      alternates: {
+        canonical: "/a_propos",
+      },
+      openGraph: {
+        title: "À propos de Eco Vert Europé | Experts en Rénovation & Énergie Durable",
+        description: "Découvrez Eco Vert Europé, votre partenaire de confiance en rénovation, énergie verte et construction durable. Expertise locale et qualité garantie.",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/a_propos`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Eco Vert Europé",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "À propos de Eco Vert Europé | Experts en Rénovation & Énergie Durable",
+          },
+        ],
+        type: "website",
+      },
+    };
+  }
+  
+
 export default function Page() {
     return(
         <div>
@@ -19,7 +50,7 @@ export default function Page() {
                 <p className=" font-panchang lg:text-sm text-xs">Depuis plus de 10 ans, nous accompagnons nos clients dans la modernisation de leurs espaces, en garantissant des résultats à la hauteur de leurs attentes.</p>
                 <div className=" flex flex-col lg:flex-row gap-4 items-center">
                     <Link href={'/contact'} className="mt-3 bg-primary  font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-white rounded-full border-primary border-4"> Réserver un rdv en ligne</Link>
-                    <Link href={'tel:+212602314804'} className="mt-3 bg-white  font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-primary rounded-full border-primary border-4">  Me faire rappeler</Link>
+                    <Link href={'tel:+33771710513'} className="mt-3 bg-white  font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-primary rounded-full border-primary border-4">  Me faire rappeler</Link>
                 </div>
             </div>
             <div className=" bg-primary flex flex-col lg:flex-row items-center justify-between">
@@ -36,17 +67,19 @@ export default function Page() {
                     </ul>
                 </div>
             </div>
-            <div className="flex flex-col items-center justify-center container text-center space-y-4 py-10 bg-tertiary">
-                <h2 className=" font-panchang-bold text-2xl lg:text-4xl text-primary">Pourquoi Choisir Eco Vert Europé ?</h2>
-                <ul className=" font-panchang space-y-4 lg:text-sm  text-xs list-inside text-white">
-                    <li><strong className="  text-white">Entreprise responsable  :</strong>  Utilisation de matériaux durables et respect des normes environnementales.</li>
-                    <li><strong className="  text-white">Savoir-faire et expertise :</strong> Une équipe qualifiée et passionnée pour des réalisations impeccables.</li>
-                    <li><strong className="  text-white">Respect des délais :</strong> Une organisation optimisée pour des chantiers livrés à temps.</li>
-                    <li><strong className="  text-white"> Solutions personnalisées :</strong> Chaque projet est unique, nous nous adaptons à vos envies et contraintes.</li>
-                </ul>
-                <div className=" flex flex-col lg:flex-row gap-4 items-center">
-                    <Link href={'/contact'} className="mt-3 bg-primary hover:bg-tertiary hover:text-primary font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-white rounded-full border-primary border-4"> Réserver un rdv en ligne</Link>
-                    <Link href={'tel:+212602314804'} className="mt-3 bg-white hover:bg-tertiary hover:text-white font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-primary rounded-full border-white border-4">  Me faire rappeler</Link>
+            <div className="py-10 bg-tertiary">
+                <div className="flex flex-col items-center justify-center container text-center space-y-4 ">
+                    <h2 className=" font-panchang-bold text-2xl lg:text-4xl text-primary">Pourquoi Choisir Eco Vert Europé ?</h2>
+                    <ul className=" font-panchang space-y-4 lg:text-sm  text-xs list-inside text-white">
+                        <li><strong className="  text-white">Entreprise responsable  :</strong>  Utilisation de matériaux durables et respect des normes environnementales.</li>
+                        <li><strong className="  text-white">Savoir-faire et expertise :</strong> Une équipe qualifiée et passionnée pour des réalisations impeccables.</li>
+                        <li><strong className="  text-white">Respect des délais :</strong> Une organisation optimisée pour des chantiers livrés à temps.</li>
+                        <li><strong className="  text-white"> Solutions personnalisées :</strong> Chaque projet est unique, nous nous adaptons à vos envies et contraintes.</li>
+                    </ul>
+                    <div className=" flex flex-col lg:flex-row gap-4 items-center">
+                        <Link href={'/contact'} className="mt-3 bg-primary hover:bg-tertiary hover:text-primary font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-white rounded-full border-primary border-4"> Réserver un rdv en ligne</Link>
+                        <Link href={'tel:+33771710513'} className="mt-3 bg-white hover:bg-tertiary hover:text-white font-panchang duration-700 w-fit py-2 px-10 text-sm lg:text-base font-satoshi font-bold text-primary rounded-full border-white border-4">  Me faire rappeler</Link>
+                    </div>
                 </div>
             </div>
             <div className="  flex flex-col-reverse lg:flex-row items-center justify-between">

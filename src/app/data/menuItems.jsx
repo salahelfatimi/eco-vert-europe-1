@@ -20,6 +20,8 @@ const menuItems = [
     },
     { title: 'A propos', href: '/a_propos' },
     // { title: 'Articles', href: '/articles' },
+    { title: 'Reserver un devis', href: '/reserver_un_devis' },
+
     { title: 'Contact', href: '/contact' },
 ];
 

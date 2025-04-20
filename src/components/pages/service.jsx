@@ -36,11 +36,11 @@ export default function Service() {
                         </div>
                         <div className="lg:w-1/2 flex flex-col  justify-center gap-6  ">
                             <div className=" flex items-center gap-4 ">
-                                <MoveUpRight className="stroke-white stroke-2 " size={50} />
+                                <MoveUpRight className="stroke-white stroke-2 hidden lg:block " size={50} />
                                 <h3 className="font-panchang-bold  font-semibold text-white text-lg lg:text-2xl uppercase">{service.title}</h3>
                             </div>
-                            <p className=" font-panchang text-lg  text-secondary  ">{service.description}</p>
-                            <Link href={service.href} className="bg-white p-4 text-center font-panchang-bold text-primary rounded-3xl hover:bg-primary border-4 border-white hover:text-white duration-700">Lire More</Link>
+                            <p className=" font-panchang lg:text-lg  text-secondary  ">{service.description}</p>
+                            <Link href={service.href} className="bg-white p-3 text-center font-panchang-bold text-primary rounded-3xl hover:bg-primary border-4 border-white hover:text-white duration-700">Lire More</Link>
                         </div>
                     </div>
                 ))}

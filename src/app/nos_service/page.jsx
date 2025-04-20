@@ -3,6 +3,37 @@ import { MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+export function generateMetadata() {
+    return {
+      title: "Nos Services de Rénovation et Travaux | Eco Vert Europé",
+      description: "Découvrez tous les services proposés par Eco Vert Europé : rénovation, toiture, isolation, plomberie, chauffage, électricité et plus encore.",
+      alternates: {
+        canonical: "/nos_service",
+      },
+      openGraph: {
+        title: "Eco Vert Europé | Nos Services de Rénovation et Travaux",
+        description: "Découvrez tous les services proposés par Eco Vert Europé : rénovation, toiture, isolation, plomberie, chauffage, électricité et plus encore.",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Eco Vert Europé",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Nos Services de Rénovation et Travaux - Eco Vert Europé",
+          },
+        ],
+        type: "website",
+      },
+    };
+  }
+
+  
 export default function Service(){
     return(
         <div>

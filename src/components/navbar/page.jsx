@@ -11,14 +11,17 @@ export default function Navbar() {
     const menuPanelRef = useRef(null);
     const closeButtonRef = useRef(null);
     const [openNav, setOpenNav] = useState(false);
+    const [logoSrc, setLogoSrc] = useState('/img/logo-white.png');
 
     useEffect(() => {
         const navbar = navbarRef.current;
         const handleScroll = () => {
             if (window.scrollY > 50) {
-                gsap.to(navbar, { backgroundColor: "white", duration: 0.5, });
+                gsap.to(navbar, { backgroundColor: "white", duration: 0.5 });
+                setLogoSrc('/img/logo.png'); // Change to dark logo
             } else {
-                gsap.to(navbar, { backgroundColor: "transparent", duration: 0.5, });
+                gsap.to(navbar, { backgroundColor: "transparent", duration: 0.5 });
+                setLogoSrc('/img/logo-white.png'); // Change to light logo
             }
         };
         window.addEventListener("scroll", handleScroll);
@@ -52,8 +55,8 @@ export default function Navbar() {
     return (
         <div>
             {/* Navbar */}
-            <div ref={navbarRef} className="flex px-2 lg:px-20 flex-row items-center justify-between min-h-20 fixed top-0 right-0 left-0 z-30">
-                <h2 >Eco vert europé</h2>
+            <div ref={navbarRef} className="flex py-4 px-2 lg:px-20 flex-row items-center justify-between min-h-20 fixed top-0 right-0 left-0 z-30">
+                <Image src={logoSrc} width={500} height={500} className="w-44" alt="Logo" />
 
                 <button onClick={() => setOpenNav(!openNav)}>
                     <Menu className="stroke-primary" size={50} />

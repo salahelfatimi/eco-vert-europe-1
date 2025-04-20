@@ -19,6 +19,12 @@ const allServices = [
         href: "/nos_service/etancheite"
     },
     {
+        title: "Revêtements de sols en résine",
+        description: "Les revêtements de sols en résine représentent une solution moderne, durable et esthétique, adaptée aussi bien aux environnements industriels qu’aux espaces commerciaux et résidentiels. Grâce à leur résistance exceptionnelle et à leur facilité d’entretien, ils sont idéals pour les zones à fort passage ou nécessitant une hygiène irréprochable.",
+        img: "/img/service/revetements-de-sols-en-resine.jpg",
+        href: "/nos_service/revetements_de_sols_en_resine"
+    },
+    {
         title: "Électricité",
         description: "Modernisez votre installation électrique en toute sécurité. Nous assurons la mise aux normes, le câblage et l’installation d’équipements performants.",
         img: "/img/service/electrique.jpg",
