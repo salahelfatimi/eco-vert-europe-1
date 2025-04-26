@@ -30,6 +30,12 @@ const allServices = [
         img: "/img/service/revetements-de-sols-en-resine.jpg",
         href: "/nos_service/revetements_de_sols_en_resine"
     },
+    {
+        title: "Service de Démolition et Débarras Professionnel",
+        description: "Eco Vert Europé prend en charge vos besoins en démolition et débarras, avec une intervention rapide, sécurisée et respectueuse de l'environnement. Que ce soit pour des bâtiments, des murs porteurs, ou le nettoyage complet de vos espaces (chantier, maison, local professionnel), notre équipe s’adapte à toutes les situations.",
+        img: "/img/service/demolition-debarrassement.jpg",
+        href: "/nos_service/demolition_debarrassement"
+    },
     // {
     //     title: "Électricité",
     //     description: "Modernisez votre installation électrique en toute sécurité. Nous assurons la mise aux normes, le câblage et l’installation d’équipements performants.",
