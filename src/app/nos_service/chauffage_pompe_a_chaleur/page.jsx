@@ -6,12 +6,12 @@ export function generateMetadata() {
     title: "Chauffage & Pompe à Chaleur - Solutions Énergétiques Modernes",
     description: "Eco Vert Europé propose des services professionnels de chauffage et d’installation de pompes à chaleur. Découvrez nos solutions modernes et économiques pour un confort optimal. Contactez-nous pour un devis gratuit.",
     alternates: {
-      canonical: "/nos_service/chauffage-pompe-a-chaleur",
+      canonical: "/nos_service/chauffage_pompe_a_chaleur",
     },
     openGraph: {
       title: "Eco Vert Europé | Chauffage & Pompe à Chaleur - Solutions Énergétiques Modernes",
       description: "Eco Vert Europé propose des services professionnels de chauffage et d’installation de pompes à chaleur. Découvrez nos solutions modernes et économiques pour un confort optimal. Contactez-nous pour un devis gratuit.",
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/chauffage-pompe-a-chaleur`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/chauffage_pompe_a_chaleur`,
       robots: {
         index: true,
         follow: true,

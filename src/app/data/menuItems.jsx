@@ -4,6 +4,7 @@ const menuItems = [
         title: 'Nos services',
         href: '/nos_service',
         dropdown: [
+            { title: 'Démolition & Débarras ', href: '/nos_service/demolition_debarrassement' },
             { title: 'Étanchéité', href: '/nos_service/etancheite' },
             { title: 'Toiture & Étanchéité', href: '/nos_service/toiture' },
             { title: 'Plomberie', href: '/nos_service/plomberie' },

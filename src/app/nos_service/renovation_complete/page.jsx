@@ -6,12 +6,12 @@ export function generateMetadata() {
     title: "Rénovation Complète - Transformation de Votre Espace",
     description: "Eco Vert Europé propose des services de rénovation complète pour transformer votre maison ou entreprise. De la conception à la réalisation, nous prenons en charge tous les aspects de votre projet. Contactez-nous pour un devis gratuit.",
     alternates: {
-      canonical: "/nos_service/renovation-complete",
+      canonical: "/nos_service/renovation_complete",
     },
     openGraph: {
       title: "Eco Vert Europé | Rénovation Complète - Transformation de Votre Espace",
       description: "Eco Vert Europé propose des services de rénovation complète pour transformer votre maison ou entreprise. De la conception à la réalisation, nous prenons en charge tous les aspects de votre projet. Contactez-nous pour un devis gratuit.",
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/renovation-complete`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/renovation_complete`,
       robots: {
         index: true,
         follow: true,

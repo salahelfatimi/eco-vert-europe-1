@@ -6,12 +6,12 @@ export function generateMetadata() {
     title: "Construction & Aménagement - Projets Clés en Main",
     description: "Eco Vert Europé propose des services professionnels de construction et d’aménagement pour des projets résidentiels, commerciaux et industriels. De la conception à la réalisation, nous vous accompagnons à chaque étape. Contactez-nous pour un devis gratuit.",
     alternates: {
-      canonical: "/nos_service/construction-amenagement",
+      canonical: "/nos_service/construction_amenagement",
     },
     openGraph: {
       title: "Eco Vert Europé | Construction & Aménagement - Projets Clés en Main",
       description: "Eco Vert Europé propose des services professionnels de construction et d’aménagement pour des projets résidentiels, commerciaux et industriels. De la conception à la réalisation, nous vous accompagnons à chaque étape. Contactez-nous pour un devis gratuit.",
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/construction-amenagement`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/construction_amenagement`,
       robots: {
         index: true,
         follow: true,

@@ -6,12 +6,12 @@ export function generateMetadata() {
     title: "Amélioration Énergétique - Solutions Éco-Énergétiques",
     description: "Eco Vert Europé propose des solutions d’amélioration énergétique pour votre maison ou entreprise. Isolation, chauffage performant, et énergies renouvelables pour réduire votre consommation et vos factures. Contactez-nous pour un audit énergétique gratuit.",
     alternates: {
-      canonical: "/nos_service/amelioration-energetique",
+      canonical: "/nos_service/amelioration_energetique",
     },
     openGraph: {
       title: "Eco Vert Europé | Amélioration Énergétique - Solutions Éco-Énergétiques",
       description: "Eco Vert Europé propose des solutions d’amélioration énergétique pour votre maison ou entreprise. Isolation, chauffage performant, et énergies renouvelables pour réduire votre consommation et vos factures. Contactez-nous pour un audit énergétique gratuit.",
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/amelioration-energetique`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/amelioration_energetique`,
       robots: {
         index: true,
         follow: true,

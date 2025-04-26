@@ -6,12 +6,12 @@ export function generateMetadata() {
     title: "Plaque de Plâtre & Cloisons - Installation et Rénovation",
     description: "Eco Vert Europé propose des services professionnels d’installation de plaques de plâtre et de cloisons. Créez des espaces fonctionnels et esthétiques avec nos solutions sur mesure. Contactez-nous pour un devis gratuit.",
     alternates: {
-      canonical: "/nos_service/plaque-de-platre-cloisons",
+      canonical: "/nos_service/plaque_de_platre_cloisons",
     },
     openGraph: {
       title: "Eco Vert Europé | Plaque de Plâtre & Cloisons - Installation et Rénovation",
       description: "Eco Vert Europé propose des services professionnels d’installation de plaques de plâtre et de cloisons. Créez des espaces fonctionnels et esthétiques avec nos solutions sur mesure. Contactez-nous pour un devis gratuit.",
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/plaque-de-platre-cloisons`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/plaque_de_platre_cloisons`,
       robots: {
         index: true,
         follow: true,

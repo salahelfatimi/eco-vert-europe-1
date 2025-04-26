@@ -6,12 +6,12 @@ export function generateMetadata() {
     title: "Façade & Isolation - Rénovation et Isolation Thermique",
     description: "Eco Vert Europé propose des services professionnels de rénovation de façade et d’isolation thermique. Améliorez l’efficacité énergétique et l’esthétique de votre bâtiment. Contactez-nous pour un devis gratuit.",
     alternates: {
-      canonical: "/nos_service/facade-isolation",
+      canonical: "/nos_service/facade_isolation",
     },
     openGraph: {
       title: "Eco Vert Europé | Façade & Isolation - Rénovation et Isolation Thermique",
       description: "Eco Vert Europé propose des services professionnels de rénovation de façade et d’isolation thermique. Améliorez l’efficacité énergétique et l’esthétique de votre bâtiment. Contactez-nous pour un devis gratuit.",
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/facade-isolation`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/facade_isolation`,
       robots: {
         index: true,
         follow: true,

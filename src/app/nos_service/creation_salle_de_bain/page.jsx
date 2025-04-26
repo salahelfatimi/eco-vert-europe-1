@@ -6,12 +6,12 @@ export function generateMetadata() {
     title: "Création de Salle de Bain Complète - Design et Rénovation",
     description: "Eco Vert Europé propose des services de création et rénovation de salles de bain complètes. Du design à l’installation, nous réalisons des espaces fonctionnels et esthétiques. Contactez-nous pour un devis gratuit.",
     alternates: {
-      canonical: "/nos_service/creation-salle-de-bain",
+      canonical: "/nos_service/creation_salle_de_bain",
     },
     openGraph: {
       title: "Eco Vert Europé | Création de Salle de Bain Complète - Design et Rénovation",
       description: "Eco Vert Europé propose des services de création et rénovation de salles de bain complètes. Du design à l’installation, nous réalisons des espaces fonctionnels et esthétiques. Contactez-nous pour un devis gratuit.",
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/creation-salle-de-bain`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nos_service/creation_salle_de_bain`,
       robots: {
         index: true,
         follow: true,
