@@ -9,16 +9,14 @@ import SactionNumbers from "@/components/tools/sactionNumbers";
 
 export function generateMetadata() {
   return {
-    title: "Eco Vert Europé | Rénovation & Construction Clés en Main",
-    description:
-      "Eco Vert Europé, votre expert en rénovation et construction. Travaux clés en main : électricité, plomberie, gros œuvre, peinture, isolation, aménagement intérieur et extérieur.",
+    title: "Eco Vert Europé - Société Générale Clé en Main",
+    description: "Besoin d'un service clé en main en Moselle ? Société Générale Clé en Main propose des solutions complètes en rénovation, construction, et aménagement. Interventions rapides, professionnelles et adaptées à vos besoins.",
     alternates: {
       canonical: "/",
     },
     openGraph: {
-      title: "Eco Vert Europé | Rénovation & Construction Clés en Main",
-      description:
-        "Eco Vert Europé vous accompagne dans vos projets de rénovation et construction. Expertise en gros œuvre, second œuvre, et aménagement intérieur et extérieur.",
+      title: "Eco Vert Europé - Société Générale Clé en Main",
+      description: "Besoin d'un service clé en main en Moselle ? Société Générale Clé en Main propose des solutions complètes en rénovation, construction, et aménagement. Interventions rapides, professionnelles et adaptées à vos besoins.",
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
       siteName: "Eco Vert Europé",
       images: [
