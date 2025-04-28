@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar/page";
 import "./globals.css";
 import Footer from "@/components/footer/page";
+import MessageCookies from "@/components/tools/cookies/message";
 
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`  flex flex-col justify-between`}>
         <Navbar/>
+        <MessageCookies/>
         <main className=" ">
           {children}
         </main>
