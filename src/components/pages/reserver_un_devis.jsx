@@ -1,6 +1,7 @@
 "use client";
 import toast, { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Reserver_un_devis() {
     const [etaps, setEtaps] = useState(1)
@@ -94,9 +95,24 @@ export default function Reserver_un_devis() {
     };
 
     return (
-        <div id="contactez-nous" className=" relative flex  font-panchang flex-col py-8  items-center justify-center pt-40  ">
+        <div id="contactez-nous" className=" relative flex  font-panchang flex-col pb-8  items-center justify-center   ">
+            <div className="relative h-[30rem] min-w-full w-full mb-10">
+                <div className="bg-black opacity-60 inset-0 absolute"></div>
+                <Image
+                    width={1920}
+                    height={1080}
+                    src="/img/contact.jpg" 
+                    alt="Carrelage – Pose et Rénovation de Carrelage"
+                    className="object-cover object-top h-[30rem] min-w-full w-full"
+                    title="Carrelage – Pose et Rénovation de Carrelage"
+                />
+                <div className={`absolute inset-0 container text-center space-y-1 p-2 rounded-xl md:space-y-4 flex items-center justify-center flex-col`}>
+                    <h1 className="font-black text-2xl md:text-6xl text-white text-center font-panchang-bold">
+                        Réservez Votre Devis Gratuit en Ligne avec Eco Vert Europé                    
+                    </h1>
+                </div>
+            </div>
             <Toaster position="bottom-right" reverseOrder={false} />
-            <h1 className="font-semibold text-3xl xl:text-3xl font-panchang  text-primary p-4 text-center  capitalize   ">Réservez Votre Devis Gratuit en Ligne avec Eco Vert Europé</h1>
             <p className=" font-panchang text-primary container text-center">Merci de remplir le formulaire ci-dessous pour nous contacter ou demander un devis pour vos projets de rénovation, nous vous répondrons dans les plus brefs délais.</p>
             <div className=" flex flex-row justify-between items-center gap-2 w-full container py-6">
                 <div className={` ${etaps === 1 || etaps === 2 || etaps === 3 ? ' bg-primary text-white' : 'border-primary border-2 text-primary'}  min-w-10 min-h-10 flex items-center justify-center rounded-full`}>

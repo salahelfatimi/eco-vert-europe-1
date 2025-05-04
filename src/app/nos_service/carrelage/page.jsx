@@ -46,9 +46,7 @@ export default function CarrelageService() {
             className="object-cover object-top h-screen min-w-full w-full"
             title="Carrelage – Pose et Rénovation de Carrelage"
           />
-          <div
-            className={`absolute inset-0 container text-center space-y-1 p-2 rounded-xl md:space-y-4 flex items-center justify-center flex-col`}
-          >
+          <div className={`absolute inset-0 container text-center space-y-1 p-2 rounded-xl md:space-y-4 flex items-center justify-center flex-col`}>
             <h1 className="font-black text-2xl md:text-6xl text-white text-center font-panchang-bold">
               Carrelage - Sols et Murs Élégants et Durables
             </h1>

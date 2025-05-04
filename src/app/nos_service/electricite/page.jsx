@@ -46,6 +46,14 @@ export default function ElectriciteService() {
             <Image   width={1920} height={1080}  src='/img/service/electrique.jpg' alt='Électricité – Votre Partenaire de Confiance pour Tous Vos Besoins Électriques' className="  object-cover object-top  h-screen min-w-full w-full" title='Électricité – Votre Partenaire de Confiance pour Tous Vos Besoins Électriques' />
             <div  className={` absolute inset-0 container text-center space-y-1  p-2 rounded-xl md:space-y-4 flex items-center justify-center flex-col `}>
                 <h1 className="font-black text-2xl md:text-6xl text-white text-center font-panchang-bold"> Travaux d'Électricité - Installation & Rénovation Électrique</h1>                   
+                <div className="flex flex-col lg:flex-row gap-4 items-center justify-center">
+                  <Link href={'/reserver_un_devis'} className="mt-3 bg-primary font-panchang duration-700 w-fit py-2 px-6 text-sm lg:text-base font-satoshi font-bold text-white rounded-full border-primary border-4">
+                    Réserver une consultation
+                  </Link>
+                  <Link href={'tel:+33771710513'} className="mt-3 bg-white font-panchang duration-700 w-fit py-2 px-6 text-sm lg:text-base font-satoshi font-bold text-primary rounded-full border-primary border-4">
+                    Me faire rappeler
+                  </Link>
+                </div>
             </div>
         </div>        
         <div className="max-w-5xl mx-auto  overflow-hidden">
@@ -102,14 +110,7 @@ export default function ElectriciteService() {
             <p className="text-secondary mb-6 font-panchang">
               Nous intervenons dans toute la région pour répondre à vos besoins électriques avec rapidité et efficacité.
             </p>
-            <div className="flex flex-col lg:flex-row gap-4 items-center justify-center">
-              <Link href={'/reserver_un_devis'} className="mt-3 bg-primary font-panchang duration-700 w-fit py-2 px-6 text-sm lg:text-base font-satoshi font-bold text-white rounded-full border-primary border-4">
-                Réserver une consultation
-              </Link>
-              <Link href={'tel:+33771710513'} className="mt-3 bg-white font-panchang duration-700 w-fit py-2 px-6 text-sm lg:text-base font-satoshi font-bold text-primary rounded-full border-primary border-4">
-                Me faire rappeler
-              </Link>
-            </div>
+            
           </div>
         </div>
       </div>

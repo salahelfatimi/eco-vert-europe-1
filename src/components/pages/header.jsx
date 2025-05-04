@@ -4,9 +4,14 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import { Montserrat } from "next/font/google";
 
 gsap.registerPlugin(ScrollTrigger);
-
+const montserrat = Montserrat({
+    subsets: ['latin'],
+    weight: ['400', '700'],
+    style: ['normal', 'italic'],
+});
 export default function Header() {
     useEffect(() => {
         gsap.to(".header-image, .header-overlay", {

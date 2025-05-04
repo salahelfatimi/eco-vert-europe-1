@@ -50,6 +50,14 @@ export default function EtancheiteService() {
             <h1 className="font-black text-2xl md:text-6xl text-white text-center font-panchang-bold">
               Travaux d'Étanchéité - Protégez votre Habitat
             </h1>
+            <div className="flex flex-col lg:flex-row gap-4 items-center justify-center">
+              <Link href={'/reserver_un_devis'} className="mt-3 bg-primary font-panchang duration-700 w-fit py-2 px-6 text-sm lg:text-base font-satoshi font-bold text-white rounded-full border-primary border-4">
+                Réserver une consultation
+              </Link>
+              <Link href={'tel:+33771710513'} className="mt-3 bg-white font-panchang duration-700 w-fit py-2 px-6 text-sm lg:text-base font-satoshi font-bold text-primary rounded-full border-primary border-4">
+                Me faire rappeler
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -88,14 +96,7 @@ export default function EtancheiteService() {
             <p className="text-secondary mb-6 font-panchang">
               Nous intervenons dans toute la région pour vos projets d'étanchéité, en neuf comme en rénovation.
             </p>
-            <div className="flex flex-col lg:flex-row gap-4 items-center justify-center">
-              <Link href={'/reserver_un_devis'} className="mt-3 bg-primary font-panchang duration-700 w-fit py-2 px-6 text-sm lg:text-base font-satoshi font-bold text-white rounded-full border-primary border-4">
-                Réserver une consultation
-              </Link>
-              <Link href={'tel:+33771710513'} className="mt-3 bg-white font-panchang duration-700 w-fit py-2 px-6 text-sm lg:text-base font-satoshi font-bold text-primary rounded-full border-primary border-4">
-                Me faire rappeler
-              </Link>
-            </div>
+            
           </div>
         </div>
       </div>

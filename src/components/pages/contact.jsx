@@ -1,6 +1,7 @@
 "use client";
 import toast, { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Contact(){
     const [isLoading, setIsLoading] = useState(false);
@@ -62,14 +63,28 @@ export default function Contact(){
 
 
     return(
-        <div id="contactez-nous" className=" font-panchang relative flex flex-col py-8  items-center justify-center pt-40  ">
-            <div className="rounded-full-css bg-prtext-primary  w-full h-6 bottom-0 absolute rotate-180 z-10 "></div>
+        <div id="contactez-nous" className=" font-panchang relative flex flex-col pb-8  items-center justify-center   ">
+            <div className="relative h-[20rem] min-w-full w-full">
+                <div className="bg-black opacity-60 inset-0 absolute"></div>
+                <Image
+                    width={1920}
+                    height={1080}
+                    src="/img/contact.jpg" 
+                    alt="Carrelage – Pose et Rénovation de Carrelage"
+                    className="object-cover object-top h-[20rem] min-w-full w-full"
+                    title="Carrelage – Pose et Rénovation de Carrelage"
+                />
+                <div className={`absolute inset-0 container text-center space-y-1 p-2 rounded-xl md:space-y-4 flex items-center justify-center flex-col`}>
+                    <h1 className="font-black text-2xl md:text-6xl text-white text-center font-panchang-bold">
+                        Contactez-nous
+                    </h1>
+                </div>
+            </div>
             <Toaster
                 toastOptions={{
                     className: " bg-[#1e1e1e] text-primary ",
                 }}
             />
-            <h1 className="font-semibold text-3xl xl:text-6xl  text-primary  p-4 text-center">contactez-nous</h1>
             <div className=" container w-full flex-col xl:flex-row  gap-16 flex p-8  justify-between items-center ">
                           
                 <form onSubmit={sendEmail} className="flex flex-col gap-4   w-full ">
