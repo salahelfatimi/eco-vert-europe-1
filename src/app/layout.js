@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <main className=" ">
           <MessageCookies/>
             {children}
-          <div className=" w-fit h-fit  fixed bottom-10 right-4 z-[100]  ">
+          <div className=" w-fit h-fit  fixed bottom-4 right-4 z-[100]  ">
             <GoogleTranslate/> 
           </div>
         </main>
