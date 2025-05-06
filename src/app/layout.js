@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/footer/page";
 import MessageCookies from "@/components/tools/cookies/message";
 import Image from "next/image";
+import GoogleTranslate from "@/components/tools/googleTranslate";
 
 
 export const metadata = {
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`  flex flex-col justify-between`}>
-        <div className=" fixed bottom-4 left-4 z-50 flex flex-col justify-center items-start  gap-4">
+        <div className=" fixed bottom-4 left-4 z-50 flex flex-col-reverse justify-center items-start  gap-4">
           <div className="bg-white flex items-center justify-center gap-4 p-2 rounded-lg  select-none " >
             <Image src={'/img/trustpilot.png'} width={280} height={130} className="w-32" alt="google avis" title="google avis" />
           </div>
@@ -25,9 +26,12 @@ export default function RootLayout({ children }) {
           </div>
         </div>
         <Navbar/>
-        <MessageCookies/>
         <main className=" ">
-          {children}
+          <MessageCookies/>
+            {children}
+          <div className=" w-fit h-fit  fixed bottom-10 right-4 z-[100]  ">
+            <GoogleTranslate/> 
+          </div>
         </main>
         <Footer/>
       </body>
