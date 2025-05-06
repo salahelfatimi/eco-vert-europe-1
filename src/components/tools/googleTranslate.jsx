@@ -6,7 +6,6 @@ import Script from "next/script";
 const languages = [
   { label: "French", value: "fr", flag: "/flags/fr.png" },
   { label: "German", value: "de", flag: "/flags/de.png" },
-  { label: "English", value: "en", flag: "/flags/en.png" },
 ];
 
 function googleTranslateElementInit() {
